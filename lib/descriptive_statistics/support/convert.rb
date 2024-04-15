@@ -28,6 +28,8 @@ module DescriptiveStatistics
     end
 
     def self.to_array(enumerable)
+      return [] if enumerable.nil?
+
       case enumerable
       when Hash
         enumerable.values.each
